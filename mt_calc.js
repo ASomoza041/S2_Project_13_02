@@ -47,6 +47,7 @@ function init() {
       document.getElementById("calcWindow").onkeydown = calcKeys;
 }
 
+//This function will set up the del, bksp, enter, and prev buttons.
 function buttonClick(e) {
       var calcValue = document.getElementById("calcWindow").value;
       var calcDecimal = document.getElementById("decimals").value;
@@ -73,6 +74,7 @@ function buttonClick(e) {
       document.getElementById("calcWindow").focus();
 }
 
+// This function will allow us to use keyboard inputs for the calculator. More specifically the delete, enter, and arrow up keys.
 function calcKeys(e) {
       var calcValue = document.getElementById("calcWindow").value;
       var calcDecimal = document.getElementById("decimals").value;
